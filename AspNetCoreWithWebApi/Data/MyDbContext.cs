@@ -12,7 +12,8 @@ namespace AspNetCoreWithWebApi.Models
             : base(options)
         {
         }
-
+        
+        // Insert your connection string here
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
